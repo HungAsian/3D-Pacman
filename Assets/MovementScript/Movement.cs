@@ -8,17 +8,14 @@ public class Movement : MonoBehaviour {
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
-    public float rotateSpeed;
-    public Transform camera; 
     private Vector3 moveDirection = Vector3.zero;
 	void Start () {
-	    
+		
 	}
 	
 	// Update is called once per frame
     void Update()
     {
-        //Vector3 camerarotate = new Vector3(0, camera.position.y, 0);
         CharacterController control = GetComponent<CharacterController>();
         if (control.isGrounded)
         {
@@ -34,8 +31,6 @@ public class Movement : MonoBehaviour {
         {
             transform.position = new Vector3(0, 0, 0); 
         }
-        transform.eulerAngles = new Vector3(0, camera.eulerAngles.y, 0); 
-        
     }
 
 }
