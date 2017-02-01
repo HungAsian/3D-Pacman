@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour {
+public class Player : MonoBehaviour {
     //Player FSM
     public enum PlayerState
     {
@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour {
         MegaChomp
     }
 
+    // Movement Variables
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
     public float gravity = 15.0F;
@@ -20,12 +21,12 @@ public class Movement : MonoBehaviour {
     float verticalgrav;
     private CharacterController control;
     public PlayerState currentState;
+    public Transform child; 
 
     // Mega Chomp Variables
     private Vector3 goalposition;
     public int MegaChompDistance = 5;
     public int MegaChompDetectionRange = 30;
-    public Transform child; 
 
     void Start()
     {

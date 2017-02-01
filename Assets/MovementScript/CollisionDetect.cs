@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CollisionDetect : MonoBehaviour {
-    Movement player;
-	// Use this for initialization
+    
+    Player player;
+    
+    // Status Variables
+    public int Health;
+    public int Energy;
+	
+    // Use this for initialization
 	void Start () {
-        player = GetComponentInParent<Movement>(); 
+        player = GetComponentInParent<Player>(); 
 	}
 	
 	// Update is called once per frame
@@ -20,7 +26,7 @@ public class CollisionDetect : MonoBehaviour {
         if (collider.gameObject.tag == "Enemy")
         {
             Debug.Log("Colliding with Enemy");
-            if (player.currentState == Movement.PlayerState.MegaChomp) Destroy(collider.gameObject);
+            if (player.currentState == Player.PlayerState.MegaChomp) Destroy(collider.gameObject);
         }
     }
 }
