@@ -22,6 +22,7 @@ public class CameraMovement : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             //put something to close game here
+            Cursor.lockState = CursorLockMode.None;
         }
 	}
 }

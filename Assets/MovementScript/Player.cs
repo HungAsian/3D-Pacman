@@ -10,6 +10,11 @@ public class Player : MonoBehaviour {
         Jumping,
         MegaChomp
     }
+    public enum HitState
+    {
+        Vincible,
+        Invincible
+    }
 
     // Movement Variables
     public float speed = 6.0F;
@@ -21,8 +26,12 @@ public class Player : MonoBehaviour {
     float verticalgrav;
     private CharacterController control;
     public PlayerState currentState;
+    public HitState hitState;
+    public int invincibilityTime;
     public Transform child;
+    public CollisionDetect childScript;
     public Transform respawn;
+    public Renderer childRenderer;
 
     // Mega Chomp Variables
     private Vector3 goalposition;
@@ -32,6 +41,7 @@ public class Player : MonoBehaviour {
     void Start()
     {
         control = GetComponent<CharacterController>();
+        control.detectCollisions = false;
         if (control.isGrounded)
         {
             currentState = PlayerState.Grounded;
@@ -40,7 +50,11 @@ public class Player : MonoBehaviour {
         {
             currentState = PlayerState.Jumping;
         }
-        child = transform.GetChild(0); 
+        hitState = HitState.Vincible;
+        invincibilityTime = 0;
+        child = transform.GetChild(0);
+        childScript = child.GetComponent<CollisionDetect>();
+        childRenderer = child.GetComponent<Renderer>();
 	}
 	
 	// Update is called once per frame
@@ -52,7 +66,7 @@ public class Player : MonoBehaviour {
         moveDirection *= speed;
 
         // Activate Mega Chomp
-        if (Input.GetMouseButtonDown(0) && currentState != PlayerState.MegaChomp)
+        if (Input.GetMouseButtonDown(0) && currentState != PlayerState.MegaChomp && childScript.Energy > 5)
         {
             GameObject target = FindEnemyinRange();
             if (target)
@@ -60,6 +74,7 @@ public class Player : MonoBehaviour {
                 goalposition = target.transform.position;
             }
             else goalposition = transform.position + transform.forward * MegaChompDistance;
+            childScript.Energy -= 5;
             currentState = PlayerState.MegaChomp;
         }
         
@@ -90,6 +105,17 @@ public class Player : MonoBehaviour {
         {
             respawn = GameObject.FindGameObjectWithTag("Respawn").transform;
             transform.position = respawn.position;
+        }
+
+        if (invincibilityTime > 0)
+        {
+            invincibilityTime--;
+            childRenderer.enabled = !childRenderer.enabled;
+            if (invincibilityTime == 0)
+            {
+                hitState = HitState.Vincible;
+                childRenderer.enabled = true;
+            }
         }
     }
 

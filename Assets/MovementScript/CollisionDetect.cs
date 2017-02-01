@@ -12,6 +12,8 @@ public class CollisionDetect : MonoBehaviour {
     // Status Variables
     public int Health;
     public int Energy;
+    public int EnergyDrainTime;
+    public int ENDrain;
 	
     // Use this for initialization
 	void Start () {
@@ -20,20 +22,47 @@ public class CollisionDetect : MonoBehaviour {
         EnergySlider = GameObject.FindGameObjectWithTag("Energy").GetComponent<Slider>();
         Health = 100;
         Energy = 100;
+        EnergyDrainTime = 100;
+        ENDrain = 100;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        if (Health > 100) Health = 100;
+        if (Energy > 100) Energy = 100;
+
         HealthSlider.value = Health;
         EnergySlider.value = Energy;
+
+        ENDrain -= 1;
+        if (ENDrain == 0)
+        {
+            Energy -= 1;
+            ENDrain = EnergyDrainTime;
+        }
 	}
 
     void OnCollisionEnter(Collision collider)
     {
+        Debug.Log("Colliding");
         if (collider.gameObject.tag == "Enemy")
         {
-            if (player.currentState == Player.PlayerState.MegaChomp) Destroy(collider.gameObject);
+            if (player.currentState == Player.PlayerState.MegaChomp || player.hitState == Player.HitState.Invincible) Destroy(collider.gameObject);
             else Health -= 10;
+        }
+        if (collider.gameObject.tag == "Pellet")
+        {
+            Destroy(collider.gameObject);
+            Energy += 2;
+        }
+        if (collider.gameObject.tag == "Super Pellet")
+        {
+            if (player.currentState == Player.PlayerState.MegaChomp)
+            {
+                Destroy(collider.gameObject);
+                player.hitState = Player.HitState.Invincible;
+                player.invincibilityTime = 100;
+            }
         }
     }
 }
