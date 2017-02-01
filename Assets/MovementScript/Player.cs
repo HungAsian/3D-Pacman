@@ -21,7 +21,8 @@ public class Player : MonoBehaviour {
     float verticalgrav;
     private CharacterController control;
     public PlayerState currentState;
-    public Transform child; 
+    public Transform child;
+    public Transform respawn;
 
     // Mega Chomp Variables
     private Vector3 goalposition;
@@ -87,7 +88,8 @@ public class Player : MonoBehaviour {
         // Respawn
         if (transform.position.y < -10)
         {
-            transform.position = new Vector3(0, 0, 0); 
+            respawn = GameObject.FindGameObjectWithTag("Respawn").transform;
+            transform.position = respawn.position;
         }
     }
 
