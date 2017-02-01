@@ -25,7 +25,7 @@ public class Movement : MonoBehaviour {
     private Vector3 goalposition;
     public int MegaChompDistance = 5;
     public int MegaChompDetectionRange = 30;
-
+    public Transform child; 
 
     void Start()
     {
@@ -38,7 +38,7 @@ public class Movement : MonoBehaviour {
         {
             currentState = PlayerState.Jumping;
         }
-		
+        child = transform.GetChild(0); 
 	}
 	
 	// Update is called once per frame
@@ -106,7 +106,17 @@ public class Movement : MonoBehaviour {
         if (!control.isGrounded)
             currentState = PlayerState.Jumping;
 
+        //Crouch
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            child.position = new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z); 
+        }
+        if (Input.GetKeyUp(KeyCode.C))
+        {
+            child.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
+        }
         moveDirection.y = verticalgrav;
+
     }
 
     void jumping()
@@ -163,13 +173,5 @@ public class Movement : MonoBehaviour {
         else return null;
     }
 
-    void OnCollisionEnter(Collision collider)
-    {
-        Debug.Log("Colliding");
-        if (collider.gameObject.tag == "Enemy")
-        {
-            Debug.Log("Colliding with Enemy");
-            if (currentState == PlayerState.MegaChomp) Destroy(collider.gameObject);
-        }
-    }
+    
 }
