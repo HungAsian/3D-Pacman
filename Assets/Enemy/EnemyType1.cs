@@ -18,7 +18,7 @@ public class EnemyType1 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        Player = GameObject.FindGameObjectWithTag("Player"); 
         cooldown = 0;
 	}
 	

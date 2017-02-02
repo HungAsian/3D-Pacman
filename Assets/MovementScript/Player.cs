@@ -69,9 +69,14 @@ public class Player : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && currentState != PlayerState.MegaChomp && childScript.Energy > 5)
         {
             GameObject target = FindEnemyinRange();
+            GameObject superTarget = FindPelletinRange(); 
             if (target)
             {
                 goalposition = target.transform.position;
+            }
+            else if (superTarget)
+            {
+                goalposition = superTarget.transform.position; 
             }
             else goalposition = transform.position + transform.forward * MegaChompDistance;
             childScript.Energy -= 5;
@@ -189,6 +194,26 @@ public class Player : MonoBehaviour {
         float distance = Mathf.Infinity;
         Vector3 position = transform.position;
         foreach (GameObject go in gos)
+        {
+            Vector3 diff = go.transform.position - position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance)
+            {
+                closest = go;
+                distance = curDistance;
+            }
+        }
+        if (distance <= MegaChompDetectionRange) return closest;
+        else return null;
+    }
+    GameObject FindPelletinRange()
+    {
+        GameObject[] pellets;
+        pellets = GameObject.FindGameObjectsWithTag("Super Pellet");
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = transform.position;
+        foreach (GameObject go in pellets)
         {
             Vector3 diff = go.transform.position - position;
             float curDistance = diff.sqrMagnitude;
