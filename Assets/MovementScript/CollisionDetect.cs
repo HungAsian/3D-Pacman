@@ -44,19 +44,23 @@ public class CollisionDetect : MonoBehaviour {
 
     void OnCollisionEnter(Collision collider)
     {
+        
         Debug.Log("Colliding");
         if (collider.gameObject.tag == "Enemy")
         {
+            Debug.Log("Colliding with enemy"); 
             if (player.currentState == Player.PlayerState.MegaChomp || player.hitState == Player.HitState.Invincible) Destroy(collider.gameObject);
             else Health -= 10;
         }
         if (collider.gameObject.tag == "Pellet")
         {
+            Debug.Log("Colliding with pellet"); 
             Destroy(collider.gameObject);
             Energy += 2;
         }
         if (collider.gameObject.tag == "Super Pellet")
         {
+            Debug.Log("Colliding with super pellet"); 
             if (player.currentState == Player.PlayerState.MegaChomp)
             {
                 Destroy(collider.gameObject);
