@@ -69,20 +69,20 @@ public class Player : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && currentState != PlayerState.MegaChomp && childScript.Energy > 5)
         {
             GameObject target = FindEnemyinRange();
-            GameObject superTarget = FindPelletinRange();
+            GameObject superTarget = FindPelletinRange(); 
             if (target)
             {
                 goalposition = target.transform.position;
             }
             else if (superTarget)
             {
-                goalposition = superTarget.transform.position;
+                goalposition = superTarget.transform.position; 
             }
             else goalposition = transform.position + transform.forward * MegaChompDistance;
             childScript.Energy -= 5;
             currentState = PlayerState.MegaChomp;
         }
-
+        
 
         switch (currentState)
         {
@@ -102,6 +102,7 @@ public class Player : MonoBehaviour {
             if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), 1))
             {
                 child.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
+                control.height += 0.5f; 
                 isCrouching = false;
             }
      
@@ -112,7 +113,7 @@ public class Player : MonoBehaviour {
             control.Move(moveDirection * Time.deltaTime);
         }
         //moveDirection.y -= gravity * Time.deltaTime;
-
+      
 
         // Respawn
         if (transform.position.y < -10)
@@ -157,6 +158,7 @@ public class Player : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.C))
         {
             child.position = new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z);
+            control.height -= 0.5f;
             isCrouching = true;
         }
 

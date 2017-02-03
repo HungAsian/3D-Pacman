@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CollisionDetect : MonoBehaviour {
     
-    Player player;
+    public Player player;
     Slider HealthSlider;
     Slider EnergySlider;
     
@@ -49,8 +49,9 @@ public class CollisionDetect : MonoBehaviour {
         if (collider.gameObject.tag == "Enemy")
         {
             Debug.Log("Colliding with enemy"); 
-            if (player.currentState == Player.PlayerState.MegaChomp || player.hitState == Player.HitState.Invincible) Destroy(collider.gameObject);
-            else Health -= 10;
+            //if (player.currentState == Player.PlayerState.MegaChomp || player.hitState == Player.HitState.Invincible) Destroy(collider.gameObject);
+            //else Health -= 10;
+            if (player.currentState == Player.PlayerState.MegaChomp) Debug.Log("enemy should die");
         }
         if (collider.gameObject.tag == "Pellet")
         {
