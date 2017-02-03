@@ -33,10 +33,10 @@ public class EnemyType1 : MonoBehaviour {
 
         if (state == EnemyState.Firing)
         {
-            GameObject bullet = Instantiate(Projectile, transform.position, Quaternion.identity);
-            bulletRB = bullet.GetComponent<Rigidbody>();
             Vector3 direction = Vector3.Normalize(Player.transform.position - transform.position);
-            Vector3 trajectory = direction * 3 + Random.insideUnitSphere;
+            GameObject bullet = Instantiate(Projectile, transform.position + direction * 1.25f, Quaternion.identity);
+            bulletRB = bullet.GetComponent<Rigidbody>();
+            Vector3 trajectory = (direction * 3) + Random.insideUnitSphere;
             bulletRB.velocity = trajectory * velocity;
 
             cooldown = 50;
