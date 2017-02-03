@@ -32,12 +32,12 @@ public class Player : MonoBehaviour {
     public CollisionDetect childScript;
     public Transform respawn;
     public Renderer childRenderer;
-
+    bool isCrouching = false;
     // Mega Chomp Variables
     private Vector3 goalposition;
     public int MegaChompDistance = 5;
     public int MegaChompDetectionRange = 30;
-
+ 
     void Start()
     {
         control = GetComponent<CharacterController>();
@@ -96,7 +96,16 @@ public class Player : MonoBehaviour {
                 MegaChomp();
                 break;
         }
-
+        //if player is not undersomething get back up
+        if (isCrouching && !Input.GetKey(KeyCode.C))
+        {
+            if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), 1))
+            {
+                child.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
+                isCrouching = false;
+            }
+     
+        }
         // Actual Movement Takes Place
         if (currentState != PlayerState.MegaChomp)
         {
@@ -126,6 +135,9 @@ public class Player : MonoBehaviour {
 
     void grounded()
     {
+       
+       
+
         // Grounding Force
         verticalgrav = -gravity * Time.deltaTime;
 
@@ -138,17 +150,16 @@ public class Player : MonoBehaviour {
 
         // Falling
         if (!control.isGrounded)
+
             currentState = PlayerState.Jumping;
 
         //Crouch
         if (Input.GetKeyDown(KeyCode.C))
         {
-            child.position = new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z); 
+            child.position = new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z);
+            isCrouching = true;
         }
-        if (Input.GetKeyUp(KeyCode.C))
-        {
-            child.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
-        }
+
         moveDirection.y = verticalgrav;
 
     }
@@ -226,6 +237,6 @@ public class Player : MonoBehaviour {
         if (distance <= MegaChompDetectionRange) return closest;
         else return null;
     }
-
+    
     
 }
