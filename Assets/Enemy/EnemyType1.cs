@@ -24,7 +24,6 @@ public class EnemyType1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(Vector3.Magnitude(Player.transform.position - transform.position));
         if (Vector3.Magnitude(Player.transform.position - transform.position) < 20 && cooldown == 0)
         {
             state = EnemyState.Firing;

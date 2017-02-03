@@ -17,7 +17,7 @@ public class CollisionDetect : MonoBehaviour {
 	
     // Use this for initialization
 	void Start () {
-        player = GetComponentInParent<Player>();
+        player = GetComponent<Player>();
         HealthSlider = GameObject.FindGameObjectWithTag("HP").GetComponent<Slider>();
         EnergySlider = GameObject.FindGameObjectWithTag("Energy").GetComponent<Slider>();
         Health = 100;
@@ -42,7 +42,7 @@ public class CollisionDetect : MonoBehaviour {
         }
 	}
 
-    void OnCollisionEnter(Collision collider)
+    void OnControllerColliderHit(ControllerColliderHit collider)
     {
         
         Debug.Log("Colliding");

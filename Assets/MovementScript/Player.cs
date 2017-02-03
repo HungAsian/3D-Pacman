@@ -53,7 +53,7 @@ public class Player : MonoBehaviour {
         hitState = HitState.Vincible;
         invincibilityTime = 0;
         child = transform.GetChild(0);
-        childScript = child.GetComponent<CollisionDetect>();
+        childScript = GetComponent<CollisionDetect>();
         childRenderer = child.GetComponent<Renderer>();
 	}
 	
@@ -69,20 +69,20 @@ public class Player : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && currentState != PlayerState.MegaChomp && childScript.Energy > 5)
         {
             GameObject target = FindEnemyinRange();
-            GameObject superTarget = FindPelletinRange(); 
+            GameObject superTarget = FindPelletinRange();
             if (target)
             {
                 goalposition = target.transform.position;
             }
             else if (superTarget)
             {
-                goalposition = superTarget.transform.position; 
+                goalposition = superTarget.transform.position;
             }
             else goalposition = transform.position + transform.forward * MegaChompDistance;
             childScript.Energy -= 5;
             currentState = PlayerState.MegaChomp;
         }
-        
+
 
         switch (currentState)
         {
@@ -103,7 +103,7 @@ public class Player : MonoBehaviour {
             control.Move(moveDirection * Time.deltaTime);
         }
         //moveDirection.y -= gravity * Time.deltaTime;
-      
+
 
         // Respawn
         if (transform.position.y < -10)
