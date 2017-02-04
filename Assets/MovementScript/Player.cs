@@ -32,12 +32,12 @@ public class Player : MonoBehaviour {
     public CollisionDetect childScript;
     public Transform respawn;
     public Renderer childRenderer;
-
+    bool isCrouching = false;
     // Mega Chomp Variables
     private Vector3 goalposition;
     public int MegaChompDistance = 5;
     public int MegaChompDetectionRange = 30;
-
+ 
     void Start()
     {
         control = GetComponent<CharacterController>();
@@ -53,7 +53,7 @@ public class Player : MonoBehaviour {
         hitState = HitState.Vincible;
         invincibilityTime = 0;
         child = transform.GetChild(0);
-        childScript = child.GetComponent<CollisionDetect>();
+        childScript = GetComponent<CollisionDetect>();
         childRenderer = child.GetComponent<Renderer>();
 	}
 	
@@ -69,9 +69,14 @@ public class Player : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && currentState != PlayerState.MegaChomp && childScript.Energy > 5)
         {
             GameObject target = FindEnemyinRange();
+            GameObject superTarget = FindPelletinRange(); 
             if (target)
             {
                 goalposition = target.transform.position;
+            }
+            else if (superTarget)
+            {
+                goalposition = superTarget.transform.position; 
             }
             else goalposition = transform.position + transform.forward * MegaChompDistance;
             childScript.Energy -= 5;
@@ -91,7 +96,17 @@ public class Player : MonoBehaviour {
                 MegaChomp();
                 break;
         }
-
+        //if player is not undersomething get back up
+        if (isCrouching && !Input.GetKey(KeyCode.C))
+        {
+            if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), 1))
+            {
+                child.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
+                control.height += 0.5f; 
+                isCrouching = false;
+            }
+     
+        }
         // Actual Movement Takes Place
         if (currentState != PlayerState.MegaChomp)
         {
@@ -121,6 +136,9 @@ public class Player : MonoBehaviour {
 
     void grounded()
     {
+       
+       
+
         // Grounding Force
         verticalgrav = -gravity * Time.deltaTime;
 
@@ -133,17 +151,17 @@ public class Player : MonoBehaviour {
 
         // Falling
         if (!control.isGrounded)
+
             currentState = PlayerState.Jumping;
 
         //Crouch
         if (Input.GetKeyDown(KeyCode.C))
         {
-            child.position = new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z); 
+            child.position = new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z);
+            control.height -= 0.5f;
+            isCrouching = true;
         }
-        if (Input.GetKeyUp(KeyCode.C))
-        {
-            child.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
-        }
+
         moveDirection.y = verticalgrav;
 
     }
@@ -201,6 +219,26 @@ public class Player : MonoBehaviour {
         if (distance <= MegaChompDetectionRange) return closest;
         else return null;
     }
-
+    GameObject FindPelletinRange()
+    {
+        GameObject[] pellets;
+        pellets = GameObject.FindGameObjectsWithTag("Super Pellet");
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = transform.position;
+        foreach (GameObject go in pellets)
+        {
+            Vector3 diff = go.transform.position - position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance)
+            {
+                closest = go;
+                distance = curDistance;
+            }
+        }
+        if (distance <= MegaChompDetectionRange) return closest;
+        else return null;
+    }
+    
     
 }
