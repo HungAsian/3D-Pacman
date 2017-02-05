@@ -13,7 +13,7 @@ public class YMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float v = V * Input.GetAxis("Mouse Y");
-        if (transform.position.y > .5 && v < 0 || transform.position.y < 8.5 && v > 0)
+        if (transform.position.y > -5 + player.position.y && v < 0 || player.position.y < player.position.y + 8.5 && v > 0)
         {
             transform.Translate(0, v * Time.deltaTime, 0);
             transform.LookAt(player);

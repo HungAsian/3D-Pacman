@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CollisionDetect : MonoBehaviour {
     
-    Player player;
+    public Player player;
     Slider HealthSlider;
     Slider EnergySlider;
     
@@ -17,7 +17,7 @@ public class CollisionDetect : MonoBehaviour {
 	
     // Use this for initialization
 	void Start () {
-        player = GetComponentInParent<Player>();
+        player = GetComponent<Player>();
         HealthSlider = GameObject.FindGameObjectWithTag("HP").GetComponent<Slider>();
         EnergySlider = GameObject.FindGameObjectWithTag("Energy").GetComponent<Slider>();
         Health = 100;
@@ -42,21 +42,26 @@ public class CollisionDetect : MonoBehaviour {
         }
 	}
 
-    void OnCollisionEnter(Collision collider)
+    void OnControllerColliderHit(ControllerColliderHit collider)
     {
+        
         Debug.Log("Colliding");
         if (collider.gameObject.tag == "Enemy")
         {
-            if (player.currentState == Player.PlayerState.MegaChomp || player.hitState == Player.HitState.Invincible) Destroy(collider.gameObject);
-            else Health -= 10;
+            Debug.Log("Colliding with enemy"); 
+            //if (player.currentState == Player.PlayerState.MegaChomp || player.hitState == Player.HitState.Invincible) Destroy(collider.gameObject);
+            //else Health -= 10;
+            if (player.currentState == Player.PlayerState.MegaChomp) Debug.Log("enemy should die");
         }
         if (collider.gameObject.tag == "Pellet")
         {
+            Debug.Log("Colliding with pellet"); 
             Destroy(collider.gameObject);
             Energy += 2;
         }
         if (collider.gameObject.tag == "Super Pellet")
         {
+            Debug.Log("Colliding with super pellet"); 
             if (player.currentState == Player.PlayerState.MegaChomp)
             {
                 Destroy(collider.gameObject);
