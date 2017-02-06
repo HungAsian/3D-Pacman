@@ -59,8 +59,10 @@ public class CollisionDetect : MonoBehaviour {
         }
         if (collider.gameObject.tag == "Pellet")
         {
-            Debug.Log("Colliding with pellet"); 
-            Destroy(collider.gameObject);
+            Debug.Log("Colliding with pellet");
+            //Destroy(collider.gameObject);
+			collider.gameObject.GetComponent<Renderer>().enabled = false;
+			collider.gameObject.GetComponent<Collider>().enabled = false;
             Energy += 2;
         }
         if (collider.gameObject.tag == "Super Pellet")
