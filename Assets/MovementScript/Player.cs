@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour
+{
     //Player FSM
     public enum PlayerState
     {
         Grounded,
         Jumping,
-        MegaChomp
+        MegaChomp,
+        MegaChompTarget
     }
     public enum HitState
     {
@@ -35,9 +37,9 @@ public class Player : MonoBehaviour {
     bool isCrouching = false;
     // Mega Chomp Variables
     private Vector3 goalposition;
-    public int MegaChompDistance = 5;
+    public float MegaChompDistance = 5f;
     public int MegaChompDetectionRange = 30;
- 
+
     void Start()
     {
         control = GetComponent<CharacterController>();
@@ -55,9 +57,9 @@ public class Player : MonoBehaviour {
         child = transform.GetChild(0);
         childScript = GetComponent<CollisionDetect>();
         childRenderer = child.GetComponent<Renderer>();
-	}
-	
-	// Update is called once per frame
+    }
+
+    // Update is called once per frame
     void Update()
     {
         // Gets input from player
@@ -69,20 +71,25 @@ public class Player : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && currentState != PlayerState.MegaChomp && childScript.Energy > 5)
         {
             GameObject target = FindEnemyinRange();
-            GameObject superTarget = FindPelletinRange(); 
+            GameObject superTarget = FindPelletinRange();
+            childScript.Energy -= 5;
             if (target)
             {
                 goalposition = target.transform.position;
+                currentState = PlayerState.MegaChompTarget;
             }
             else if (superTarget)
             {
-                goalposition = superTarget.transform.position; 
+                goalposition = superTarget.transform.position;
+                currentState = PlayerState.MegaChompTarget;
             }
-            else goalposition = transform.position + transform.forward * MegaChompDistance;
-            childScript.Energy -= 5;
-            currentState = PlayerState.MegaChomp;
+            else
+            {
+                goalposition = transform.position + transform.forward * MegaChompDistance;
+                currentState = PlayerState.MegaChomp;
+            }
         }
-        
+
 
         switch (currentState)
         {
@@ -95,17 +102,20 @@ public class Player : MonoBehaviour {
             case PlayerState.MegaChomp:
                 MegaChomp();
                 break;
+            case PlayerState.MegaChompTarget:
+                MegaChompTarget();
+                break;
         }
         //if player is not undersomething get back up
         if (isCrouching && !Input.GetKey(KeyCode.C))
         {
-            if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), 1))
+            if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), .5f))
             {
                 child.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
-                control.height += 0.5f; 
+                control.height += 0.5f;
                 isCrouching = false;
             }
-     
+
         }
         // Actual Movement Takes Place
         if (currentState != PlayerState.MegaChomp)
@@ -113,7 +123,7 @@ public class Player : MonoBehaviour {
             control.Move(moveDirection * Time.deltaTime);
         }
         //moveDirection.y -= gravity * Time.deltaTime;
-      
+
 
         // Respawn
         if (transform.position.y < -10)
@@ -132,12 +142,22 @@ public class Player : MonoBehaviour {
                 childRenderer.enabled = true;
             }
         }
+
+        // Look at pellets
+        Collider[] localColliders = Physics.OverlapSphere(transform.position, 2f);
+        Transform lookat = null;
+        foreach (Collider CollidingObject in localColliders)
+        {
+            if (CollidingObject.tag == "Pellet") lookat = CollidingObject.transform;
+        }
+        if (lookat) child.transform.LookAt(lookat);
+        else child.transform.rotation = transform.rotation;
     }
 
     void grounded()
     {
-       
-       
+
+
 
         // Grounding Force
         verticalgrav = -gravity * Time.deltaTime;
@@ -185,8 +205,7 @@ public class Player : MonoBehaviour {
 
     void MegaChomp()
     {
-        transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
-        if (Vector3.Magnitude(transform.position - goalposition) < .5)
+        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward)))
         {
             if (control.isGrounded)
             {
@@ -196,6 +215,29 @@ public class Player : MonoBehaviour {
             {
                 currentState = PlayerState.Jumping;
             }
+        }
+        else transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
+    }
+
+    void MegaChompTarget()
+    {
+        if (Vector3.Magnitude(transform.position - goalposition) < .5)
+        {
+            if (control.isGrounded)
+            {
+                currentState = PlayerState.Grounded;
+                child.transform.rotation = transform.rotation;
+            }
+            else
+            {
+                currentState = PlayerState.Jumping;
+                child.transform.rotation = transform.rotation;
+            }
+        }
+        else
+        {
+            child.transform.LookAt(goalposition);
+            transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
         }
     }
 
@@ -239,6 +281,6 @@ public class Player : MonoBehaviour {
         if (distance <= MegaChompDetectionRange) return closest;
         else return null;
     }
-    
-    
+
+
 }
