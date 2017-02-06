@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
     public CollisionDetect childScript;
     public Transform respawn;
     public Renderer childRenderer;
-    bool isCrouching = false;
+    public bool isCrouching = false;
     // Mega Chomp Variables
     private Vector3 goalposition;
     public float MegaChompDistance = 5f;
@@ -90,6 +90,18 @@ public class Player : MonoBehaviour
             }
         }
 
+        //if player is not undersomething get back up
+        if (isCrouching && !Input.GetKey(KeyCode.C))
+        {
+            if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), 1f))
+            {
+                Debug.Log("Nothing Above");
+                child.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
+                control.height += 0.5f;
+                isCrouching = false;
+            }
+
+        }
 
         switch (currentState)
         {
@@ -106,17 +118,7 @@ public class Player : MonoBehaviour
                 MegaChompTarget();
                 break;
         }
-        //if player is not undersomething get back up
-        if (isCrouching && !Input.GetKey(KeyCode.C))
-        {
-            if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), .5f))
-            {
-                child.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
-                control.height += 0.5f;
-                isCrouching = false;
-            }
-
-        }
+        
         // Actual Movement Takes Place
         if (currentState != PlayerState.MegaChomp)
         {
@@ -175,7 +177,7 @@ public class Player : MonoBehaviour
             currentState = PlayerState.Jumping;
 
         //Crouch
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C) && isCrouching == false)
         {
             child.position = new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z);
             control.height -= 0.5f;
@@ -205,7 +207,7 @@ public class Player : MonoBehaviour
 
     void MegaChomp()
     {
-        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward)))
+        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), 0.5f))
         {
             if (control.isGrounded)
             {
