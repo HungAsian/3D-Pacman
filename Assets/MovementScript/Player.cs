@@ -8,7 +8,8 @@ public class Player : MonoBehaviour {
     {
         Grounded,
         Jumping,
-        MegaChomp
+        MegaChomp,
+        MegaChompTarget
     }
     public enum HitState
     {
@@ -35,7 +36,7 @@ public class Player : MonoBehaviour {
     bool isCrouching = false;
     // Mega Chomp Variables
     private Vector3 goalposition;
-    public int MegaChompDistance = 5;
+    public float MegaChompDistance = 5f;
     public int MegaChompDetectionRange = 30;
  
     void Start()
@@ -69,18 +70,23 @@ public class Player : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && currentState != PlayerState.MegaChomp && childScript.Energy > 5)
         {
             GameObject target = FindEnemyinRange();
-            GameObject superTarget = FindPelletinRange(); 
+            GameObject superTarget = FindPelletinRange();
+            childScript.Energy -= 5;
             if (target)
             {
                 goalposition = target.transform.position;
+                currentState = PlayerState.MegaChompTarget;
             }
             else if (superTarget)
             {
-                goalposition = superTarget.transform.position; 
+                goalposition = superTarget.transform.position;
+                currentState = PlayerState.MegaChompTarget;
             }
-            else goalposition = transform.position + transform.forward * MegaChompDistance;
-            childScript.Energy -= 5;
-            currentState = PlayerState.MegaChomp;
+            else
+            {
+                goalposition = transform.position + transform.forward * MegaChompDistance;
+                currentState = PlayerState.MegaChomp;
+            }
         }
         
 
@@ -95,11 +101,14 @@ public class Player : MonoBehaviour {
             case PlayerState.MegaChomp:
                 MegaChomp();
                 break;
+            case PlayerState.MegaChompTarget:
+                MegaChompTarget();
+                break;
         }
         //if player is not undersomething get back up
         if (isCrouching && !Input.GetKey(KeyCode.C))
         {
-            if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), 1))
+            if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up),.5f))
             {
                 child.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
                 control.height += 0.5f; 
@@ -132,6 +141,16 @@ public class Player : MonoBehaviour {
                 childRenderer.enabled = true;
             }
         }
+
+        // Look at pellets
+        Collider[] localColliders = Physics.OverlapSphere(transform.position, 2f);
+        Transform lookat = null;
+        foreach (Collider CollidingObject in localColliders)
+        {
+            if (CollidingObject.tag == "Pellet") lookat = CollidingObject.transform;
+        }
+        if (lookat) child.transform.LookAt(lookat);
+        else child.transform.rotation = transform.rotation;
     }
 
     void grounded()
@@ -185,8 +204,7 @@ public class Player : MonoBehaviour {
 
     void MegaChomp()
     {
-        transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
-        if (Vector3.Magnitude(transform.position - goalposition) < .5)
+        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward)))
         {
             if (control.isGrounded)
             {
@@ -196,6 +214,29 @@ public class Player : MonoBehaviour {
             {
                 currentState = PlayerState.Jumping;
             }
+        }
+        else transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
+    }
+
+    void MegaChompTarget()
+    {
+        if (Vector3.Magnitude(transform.position - goalposition) < .5)
+        {
+            if (control.isGrounded)
+            {
+                currentState = PlayerState.Grounded;
+                child.transform.rotation = transform.rotation;
+            }
+            else
+            {
+                currentState = PlayerState.Jumping;
+                child.transform.rotation = transform.rotation;
+            }
+        }
+        else
+        {
+            child.transform.LookAt(goalposition);
+            transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
         }
     }
 

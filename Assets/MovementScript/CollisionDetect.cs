@@ -51,7 +51,11 @@ public class CollisionDetect : MonoBehaviour {
             Debug.Log("Colliding with enemy"); 
             //if (player.currentState == Player.PlayerState.MegaChomp || player.hitState == Player.HitState.Invincible) Destroy(collider.gameObject);
             //else Health -= 10;
-            if (player.currentState == Player.PlayerState.MegaChomp) Debug.Log("enemy should die");
+            if (player.currentState == Player.PlayerState.MegaChompTarget)
+            {
+                Destroy(collider.gameObject);
+                Debug.Log("enemy should die");
+            }
         }
         if (collider.gameObject.tag == "Pellet")
         {
@@ -62,7 +66,7 @@ public class CollisionDetect : MonoBehaviour {
         if (collider.gameObject.tag == "Super Pellet")
         {
             Debug.Log("Colliding with super pellet"); 
-            if (player.currentState == Player.PlayerState.MegaChomp)
+            if (player.currentState == Player.PlayerState.MegaChompTarget)
             {
                 Destroy(collider.gameObject);
                 player.hitState = Player.HitState.Invincible;
