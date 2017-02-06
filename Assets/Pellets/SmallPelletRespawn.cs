@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SmallPelletRespawn : MonoBehaviour {
 
+	public int totalRespawnTime;
 	private int respawnTimer = 0;
 
 	// Use this for initialization
@@ -17,7 +18,7 @@ public class SmallPelletRespawn : MonoBehaviour {
 		if (GetComponent<Renderer>().enabled == false) 
 		{
 			respawnTimer++;
-			if (respawnTimer == 1000) {
+			if (respawnTimer == totalRespawnTime) {
 				GetComponent<Renderer>().enabled = true;
 				GetComponent<Collider>().enabled = true;
 				respawnTimer = 0;
