@@ -19,7 +19,7 @@ public class EnemyBehavior : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        pellet = GameObject.FindGameObjectWithTag("Super Pellet").transform;
+        pellet = FindClosestPellet().transform;
     }
 	
 	// Update is called once per frame
@@ -86,5 +86,26 @@ public class EnemyBehavior : MonoBehaviour {
     void Orbit()
     {
             transform.RotateAround(pellet.position, Vector3.up, 20 * Time.deltaTime);
+    }
+
+
+    GameObject FindClosestPellet()
+    {
+        GameObject[] pellets;
+        pellets = GameObject.FindGameObjectsWithTag("Super Pellet");
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = transform.position;
+        foreach (GameObject go in pellets)
+        {
+            Vector3 diff = go.transform.position - position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance)
+            {
+                closest = go;
+                distance = curDistance;
+            }
+        }
+        return closest;
     }
 }
