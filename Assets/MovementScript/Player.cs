@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     }
 
     // Movement Variables
-    public float speed = 6.0F;
+    public float speed;
     public float jumpSpeed = 8.0F;
     public float gravity = 15.0F;
     public float floatingmultiplier = 0.1f;
@@ -62,6 +62,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (childScript.Energy > 50) speed = 6.0f;
+        else if (childScript.Energy > 25) speed = 3.5f;
+        else speed = 2.0f;
         // Gets input from player
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
@@ -95,7 +99,6 @@ public class Player : MonoBehaviour
         {
             if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), 1f))
             {
-                Debug.Log("Nothing Above");
                 child.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
                 control.height += 0.5f;
                 isCrouching = false;
@@ -207,7 +210,7 @@ public class Player : MonoBehaviour
 
     void MegaChomp()
     {
-        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), 0.5f))
+        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 1f))
         {
             if (control.isGrounded)
             {
