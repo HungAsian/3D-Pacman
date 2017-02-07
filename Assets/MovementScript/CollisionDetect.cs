@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement; 
 public class CollisionDetect : MonoBehaviour {
     
     public Player player;
@@ -74,6 +74,12 @@ public class CollisionDetect : MonoBehaviour {
                 player.hitState = Player.HitState.Invincible;
                 player.invincibilityTime = 100;
             }
+        }
+        if (collider.gameObject.tag == "FatEnemy")
+        {
+            Debug.Log("Game Should END here");
+            SceneManager.LoadScene("Vaughan Level Design Scene"); 
+            
         }
     }
 }

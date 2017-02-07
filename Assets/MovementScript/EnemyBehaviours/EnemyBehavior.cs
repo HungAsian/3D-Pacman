@@ -7,13 +7,15 @@ public class EnemyBehavior : MonoBehaviour {
     Vector3 steering;
     Vector3 velocity;
     Vector3 desired;
+    public Player chomp; 
     public Transform player;
     public Transform pellet;
     public enum EnemyState
     {
         chase,
         Return,
-        orbit 
+        orbit,
+        flee
     }
     public EnemyState currentState;
 	// Use this for initialization
@@ -51,6 +53,9 @@ public class EnemyBehavior : MonoBehaviour {
                 break;
             case EnemyState.Return:
                 Return();
+                break; 
+            case EnemyState.flee:
+                flee(); 
                 break;
 
 
@@ -58,25 +63,32 @@ public class EnemyBehavior : MonoBehaviour {
     }
     void chase()
     {
-        if (pellet != null)
+        if (chomp.hitState != Player.HitState.Invincible)
         {
-            if (Vector3.Distance(transform.position, target) < 5)
+            if (pellet != null)
             {
-                transform.position = Vector3.Lerp(transform.position, player.position, 0.01f);
+                if (Vector3.Distance(transform.position, target) < 5)
+                {
+                    transform.position = Vector3.Lerp(transform.position, player.position, 0.01f);
+                }
+            }
+            else
+            {
+                transform.position = Vector3.Lerp(transform.position, player.position, 0.04f);
             }
         }
         else
         {
-            transform.position = Vector3.Lerp(transform.position, player.position, 0.04f);
+            currentState = EnemyState.flee; 
         }
- 
+
     }
 
     void Return()
     {
         if (pellet != null)
         {
-            transform.position = Vector3.Lerp(transform.position, pellet.position, 0.01f);
+            transform.position = Vector3.Lerp(transform.position, pellet.position, 0.09f);
             if (Vector3.Distance(transform.position, pellet.position) < 5)
             {
                 currentState = EnemyState.orbit;
@@ -86,6 +98,14 @@ public class EnemyBehavior : MonoBehaviour {
     void Orbit()
     {
             transform.RotateAround(pellet.position, Vector3.up, 20 * Time.deltaTime);
+    }
+    void flee()
+    {
+        if (chomp.hitState == Player.HitState.Invincible)
+        {
+            Vector3 run = player.position - transform.position;
+            transform.position = Vector3.Lerp(transform.position, run +transform.position , 0.01f);  
+        }
     }
 
 
