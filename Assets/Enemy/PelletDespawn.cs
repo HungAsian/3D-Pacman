@@ -6,10 +6,12 @@ public class PelletDespawn : MonoBehaviour {
 
     public int lifetime = 600;
     Rigidbody rb;
+    int timeGrounded;
 
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
+        timeGrounded = 0;
 	}
 	
 	// Update is called once per frame
@@ -17,12 +19,18 @@ public class PelletDespawn : MonoBehaviour {
         lifetime--;
 
         if (lifetime == 0) Destroy(gameObject);
+
+        if (Physics.Raycast(transform.position, Vector3.down, .5f) && timeGrounded > 5)
+        {
+            rb.useGravity = false;
+            rb.isKinematic = true;
+            transform.position = new Vector3(transform.position.x, GetComponent<Collider>().transform.position.y + 1f, transform.position.z);
+        }
+        else if (Physics.Raycast(transform.position, Vector3.down, .5f))
+        {
+            timeGrounded++;
+        }
+        else timeGrounded = 0;
 	}
 
-    void OnCollisionEnter(Collision collider)
-    {
-        rb.useGravity = false;
-        rb.isKinematic = true;
-        transform.position = new Vector3(transform.position.x, collider.transform.position.y + 1f, transform.position.z);
-    }
 }
