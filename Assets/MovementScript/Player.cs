@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
     private Vector3 goalposition;
     public float MegaChompDistance = 5f;
     public int MegaChompDetectionRange = 30;
+    Rigidbody rb;
 
     void Start()
     {
@@ -57,6 +58,7 @@ public class Player : MonoBehaviour
         child = transform.GetChild(0);
         childScript = GetComponent<CollisionDetect>();
         childRenderer = child.GetComponent<Renderer>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -208,7 +210,7 @@ public class Player : MonoBehaviour
 
     void MegaChomp()
     {
-        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 0.5f))
+        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 0.8f))
         {
             if (control.isGrounded)
             {
@@ -219,7 +221,11 @@ public class Player : MonoBehaviour
                 currentState = PlayerState.Jumping;
             }
         }
-        else transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, goalposition, 40 * Time.deltaTime);
+            //rb.MovePosition(goalposition);
+        }
     }
 
     void MegaChompTarget()
@@ -240,7 +246,8 @@ public class Player : MonoBehaviour
         else
         {
             child.transform.LookAt(goalposition);
-            transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
+            transform.position = Vector3.MoveTowards(transform.position, goalposition, 40 * Time.deltaTime);
+            //rb.MovePosition(goalposition);
         }
     }
 
