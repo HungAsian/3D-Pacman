@@ -63,9 +63,9 @@ public class Player : MonoBehaviour
     void Update()
     {
 
-        if (childScript.Energy > 50) speed = 6.0f;
-        else if (childScript.Energy > 25) speed = 3.5f;
-        else speed = 2.0f;
+        if (childScript.Energy > 50) speed = 8.0f;
+        else if (childScript.Energy > 25) speed = 5.5f;
+        else speed = 4.0f;
         // Gets input from player
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
@@ -162,8 +162,6 @@ public class Player : MonoBehaviour
     void grounded()
     {
 
-
-
         // Grounding Force
         verticalgrav = -gravity * Time.deltaTime;
 
@@ -210,7 +208,7 @@ public class Player : MonoBehaviour
 
     void MegaChomp()
     {
-        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 1f))
+        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 0.5f))
         {
             if (control.isGrounded)
             {
