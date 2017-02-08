@@ -7,7 +7,7 @@ public class BoidController : MonoBehaviour {
     public float minVelocity = 5;
     public float maxVelocity = 20;
     public float randomness = 1;
-    public int flockSize = 10;
+    public int flockSize = 2;
     public GameObject prefab;
     public GameObject chasee;
 
@@ -25,7 +25,7 @@ public class BoidController : MonoBehaviour {
             Vector3 position = new Vector3 (Random.Range(0f, 100f), 20f, Random.Range(0f, 100f));
             GameObject boid = Instantiate(prefab, transform.position, transform.rotation) as GameObject;
             boid.transform.parent = transform;
-            boid.transform.localPosition = position;
+            boid.transform.position = position;
             boid.GetComponent<BoidFlocking>().SetController (gameObject);
             boids[i] = boid;
 	    }
@@ -45,5 +45,19 @@ public class BoidController : MonoBehaviour {
 
         flockCenter = theCenter / (flockSize);
         flockVelocity = theVelocity / (flockSize);
+
+        if (Input.GetMouseButtonDown(1)) spawn();
 	}
+
+    void spawn()
+    {
+        Vector3 position = new Vector3(Random.Range(0f, 100f), 20f, Random.Range(0f, 100f));
+        GameObject boid = Instantiate(prefab, transform.position, transform.rotation) as GameObject;
+        boid.transform.parent = transform;
+        boid.transform.localPosition = position;
+        boid.GetComponent<BoidFlocking>().SetController(gameObject);
+
+        boids[flockSize + 1] = boid;
+    }
+
 }

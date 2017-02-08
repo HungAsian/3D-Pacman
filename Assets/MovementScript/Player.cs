@@ -162,8 +162,6 @@ public class Player : MonoBehaviour
     void grounded()
     {
 
-
-
         // Grounding Force
         verticalgrav = -gravity * Time.deltaTime;
 
@@ -210,7 +208,7 @@ public class Player : MonoBehaviour
 
     void MegaChomp()
     {
-        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 1f))
+        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 0.5f))
         {
             if (control.isGrounded)
             {
