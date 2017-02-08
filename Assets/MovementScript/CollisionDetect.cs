@@ -27,7 +27,8 @@ public class CollisionDetect : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+    void Update()
+    {
         if (Time.deltaTime != 0)
         {
             if (Health > 100) Health = 100;
@@ -35,21 +36,18 @@ public class CollisionDetect : MonoBehaviour {
 
             HealthSlider.value = Health;
             EnergySlider.value = Energy;
-
-<<<<<<< HEAD
             ENDrain -= 1;
             if (ENDrain == 0)
             {
                 Energy -= 1;
                 ENDrain = EnergyDrainTime;
             }
-=======
-        if (Energy > 0 && player.hitState == Player.HitState.Vincible) ENDrain -= 1;
-        if (ENDrain == 0)
-        {
-            Energy -= 1;
-            ENDrain = EnergyDrainTime;
->>>>>>> af7531bd98e24a9f71c1077fe2c63ffc1345d2c3
+            if (Energy > 0 && player.hitState == Player.HitState.Vincible) ENDrain -= 1;
+            if (ENDrain == 0)
+            {
+                Energy -= 1;
+                ENDrain = EnergyDrainTime;
+            }
         }
     }
 
