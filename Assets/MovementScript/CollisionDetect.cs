@@ -53,7 +53,7 @@ public class CollisionDetect : MonoBehaviour {
         }
     }
 
-    void OnControllerColliderHit(ControllerColliderHit collider)
+    public void OnControllerColliderHit(ControllerColliderHit collider)
     {
         if (collider.gameObject.tag == "Enemy")
         {

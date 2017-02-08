@@ -39,7 +39,6 @@ public class Player : MonoBehaviour
     private Vector3 goalposition;
     public float MegaChompDistance = 5f;
     public int MegaChompDetectionRange = 30;
-    Rigidbody rb;
 
     void Start()
     {
@@ -58,7 +57,6 @@ public class Player : MonoBehaviour
         child = transform.GetChild(0);
         childScript = GetComponent<CollisionDetect>();
         childRenderer = child.GetComponent<Renderer>();
-        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -210,6 +208,18 @@ public class Player : MonoBehaviour
 
     void MegaChomp()
     {
+        RaycastHit hit;
+        if (Physics.SphereCast(child.position, .3f, transform.TransformDirection(Vector3.forward), out hit, .7f))
+        {
+            if (hit.rigidbody.tag == "Pellet")
+            {
+                GameObject pellet = hit.transform.gameObject;
+
+                pellet.GetComponent<Renderer>().enabled = false;
+                pellet.GetComponent<Collider>().enabled = false;
+                childScript.Energy += 4;
+            }
+        }
         if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 0.8f))
         {
             if (control.isGrounded)
@@ -223,7 +233,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            transform.position = Vector3.MoveTowards(transform.position, goalposition, 40 * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
             //rb.MovePosition(goalposition);
         }
     }
@@ -246,7 +256,7 @@ public class Player : MonoBehaviour
         else
         {
             child.transform.LookAt(goalposition);
-            transform.position = Vector3.MoveTowards(transform.position, goalposition, 40 * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
             //rb.MovePosition(goalposition);
         }
     }
