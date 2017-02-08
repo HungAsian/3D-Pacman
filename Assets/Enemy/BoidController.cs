@@ -49,7 +49,7 @@ public class BoidController : MonoBehaviour {
         if (Input.GetMouseButtonDown(1)) spawn();
 	}
 
-    void spawn()
+    public void spawn()
     {
         Vector3 position = new Vector3(Random.Range(0f, 100f), 20f, Random.Range(0f, 100f));
         GameObject boid = Instantiate(prefab, transform.position, transform.rotation) as GameObject;
