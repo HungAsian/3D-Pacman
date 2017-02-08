@@ -36,46 +36,64 @@ public class CollisionDetect : MonoBehaviour {
             HealthSlider.value = Health;
             EnergySlider.value = Energy;
 
+<<<<<<< HEAD
             ENDrain -= 1;
             if (ENDrain == 0)
             {
                 Energy -= 1;
                 ENDrain = EnergyDrainTime;
             }
+=======
+        if (Energy > 0 && player.hitState == Player.HitState.Vincible) ENDrain -= 1;
+        if (ENDrain == 0)
+        {
+            Energy -= 1;
+            ENDrain = EnergyDrainTime;
+>>>>>>> af7531bd98e24a9f71c1077fe2c63ffc1345d2c3
         }
     }
 
     void OnControllerColliderHit(ControllerColliderHit collider)
     {
-        
-        Debug.Log("Colliding");
         if (collider.gameObject.tag == "Enemy")
         {
-            Debug.Log("Colliding with enemy"); 
             //if (player.currentState == Player.PlayerState.MegaChomp || player.hitState == Player.HitState.Invincible) Destroy(collider.gameObject);
             //else Health -= 10;
             if (player.currentState == Player.PlayerState.MegaChompTarget)
             {
                 Destroy(collider.gameObject);
-                Debug.Log("enemy should die");
             }
         }
         if (collider.gameObject.tag == "Pellet")
         {
-            Debug.Log("Colliding with pellet");
             //Destroy(collider.gameObject);
 			collider.gameObject.GetComponent<Renderer>().enabled = false;
 			collider.gameObject.GetComponent<Collider>().enabled = false;
-            Energy += 2;
+            Energy += 4;
         }
         if (collider.gameObject.tag == "Super Pellet")
         {
-            Debug.Log("Colliding with super pellet"); 
             if (player.currentState == Player.PlayerState.MegaChompTarget)
             {
                 Destroy(collider.gameObject);
                 player.hitState = Player.HitState.Invincible;
-                player.invincibilityTime = 100;
+                player.invincibilityTime = 500;
+            }
+        }
+        if (collider.gameObject.tag == "Big Pellet")
+        {
+            collider.gameObject.GetComponent<Renderer>().enabled = false;
+            collider.gameObject.GetComponent<Collider>().enabled = false;
+            Energy = 100;
+        }
+        if (collider.gameObject.tag == "Bad Pellet")
+        {
+            Destroy(collider.gameObject);
+            if ((player.currentState != Player.PlayerState.MegaChompTarget || player.currentState != Player.PlayerState.MegaChomp) && player.hitState != Player.HitState.Invincible)
+            {
+                Health -= 5;
+                player.hitState = Player.HitState.Invincible;
+                player.invincibilityTime = 50;
             }
         }
         if (collider.gameObject.tag == "FatEnemy")

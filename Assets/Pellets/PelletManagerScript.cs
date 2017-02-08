@@ -8,6 +8,8 @@ public class PelletManagerScript : MonoBehaviour {
 
 	private bool respawnPellets = false;
 
+	BoidController boidObj;
+
 
 
 	public enum pelletBoard
@@ -64,7 +66,17 @@ public class PelletManagerScript : MonoBehaviour {
                     item.GetComponent<Renderer>().enabled = true;
                     item.GetComponent<Collider>().enabled = true;
 
+<<<<<<< HEAD
                 }
+=======
+			spawnState = pelletBoard.activePellets;
+
+			boidObj.spawn();
+
+
+				
+			//}
+>>>>>>> af7531bd98e24a9f71c1077fe2c63ffc1345d2c3
 
                 spawnState = pelletBoard.activePellets;
 

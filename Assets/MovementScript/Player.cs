@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
     private Vector3 goalposition;
     public float MegaChompDistance = 5f;
     public int MegaChompDetectionRange = 30;
+    Rigidbody rb;
 
     void Start()
     {
@@ -57,15 +58,16 @@ public class Player : MonoBehaviour
         child = transform.GetChild(0);
         childScript = GetComponent<CollisionDetect>();
         childRenderer = child.GetComponent<Renderer>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (childScript.Energy > 50) speed = 6.0f;
-        else if (childScript.Energy > 25) speed = 3.5f;
-        else speed = 2.0f;
+        if (childScript.Energy > 50) speed = 8.0f;
+        else if (childScript.Energy > 25) speed = 5.5f;
+        else speed = 4.0f;
         // Gets input from player
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
@@ -162,8 +164,6 @@ public class Player : MonoBehaviour
     void grounded()
     {
 
-
-
         // Grounding Force
         verticalgrav = -gravity * Time.deltaTime;
 
@@ -210,7 +210,7 @@ public class Player : MonoBehaviour
 
     void MegaChomp()
     {
-        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 1f))
+        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 0.8f))
         {
             if (control.isGrounded)
             {
@@ -221,7 +221,11 @@ public class Player : MonoBehaviour
                 currentState = PlayerState.Jumping;
             }
         }
-        else transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, goalposition, 40 * Time.deltaTime);
+            //rb.MovePosition(goalposition);
+        }
     }
 
     void MegaChompTarget()
@@ -242,7 +246,8 @@ public class Player : MonoBehaviour
         else
         {
             child.transform.LookAt(goalposition);
-            transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
+            transform.position = Vector3.MoveTowards(transform.position, goalposition, 40 * Time.deltaTime);
+            //rb.MovePosition(goalposition);
         }
     }
 
