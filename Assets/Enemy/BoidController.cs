@@ -21,7 +21,7 @@ public class BoidController : MonoBehaviour {
 	void Start () {
         chasee = GameObject.FindGameObjectWithTag("Player");
         //boids = new GameObject[flockSize];
-        for (var i=0; i<flockSize; i++)
+        for (int i=0; i<flockSize; i++)
         {
             Vector3 position = new Vector3 (Random.Range(0f, 100f), 20f, Random.Range(0f, 100f));
             GameObject boid = Instantiate(prefab, transform.position, transform.rotation) as GameObject;

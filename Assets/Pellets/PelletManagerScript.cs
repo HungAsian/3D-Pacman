@@ -24,77 +24,81 @@ public class PelletManagerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		pelletArr = GameObject.FindGameObjectsWithTag ("Pellet");
+	 	pelletArr = GameObject.FindGameObjectsWithTag ("Pellet");
 
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        if (Time.deltaTime != 0)
-        {
-            if (spawnState == pelletBoard.activePellets)
-            {
-
-                respawnPellets = true;
+	void Update ()
+	{
+		if (Time.deltaTime != 0) 
+		{
 
 
-                foreach (var item in pelletArr)
-                {
 
-                    if (item.GetComponent<Renderer>().enabled == true)
-                    {
-                        respawnPellets = false;
-                        break;
-                    }
 
-                }
 
-<<<<<<< HEAD
-				spawnState = pelletBoard.noPellets;
-				//boidObj.spawn();
 
-			}
-=======
-                if (respawnPellets == true)
-                {
->>>>>>> origin/master
+			if (spawnState == pelletBoard.activePellets) 
+			{
 
-                    spawnState = pelletBoard.noPellets;
-                }
+				respawnPellets = true;
 
-            }
 
-            if (spawnState == pelletBoard.noPellets)
-            {
+				foreach (var item in pelletArr) 
+				{
 
-<<<<<<< HEAD
+					if (item.GetComponent<Renderer> ().enabled == true) 
+					{
+						respawnPellets = false;
+						break;
+					}
+
 				}
-				
-
-=======
-                //if (respawnPellets == true) {
-                foreach (var item in pelletArr)
-                {
-                    item.GetComponent<Renderer>().enabled = true;
-                    item.GetComponent<Collider>().enabled = true;
->>>>>>> origin/master
-
-                }
-			spawnState = pelletBoard.activePellets;
 
 
-			boidObj.spawn();
-			boidObj.spawn();
+			
+
+			if (respawnPellets == true) {
+
+
+				spawnState = pelletBoard.noPellets;
+			}
+
+		}
+
+			if (spawnState == pelletBoard.noPellets) {
 
 
 				
-			//}
+				
 
-                spawnState = pelletBoard.activePellets;
 
-                //}
 
-            }
-        }
+				foreach (var item in pelletArr) {
+					item.GetComponent<Renderer> ().enabled = true;
+					item.GetComponent<Collider> ().enabled = true;
+
+
+				}
+				spawnState = pelletBoard.activePellets;
+
+
+				boidObj.spawn ();
+				boidObj.spawn ();
+
+
+				
+			}
+				
+
+               
+		}
 	}
-}
+
+		}
+			
+	
+
+	
+
