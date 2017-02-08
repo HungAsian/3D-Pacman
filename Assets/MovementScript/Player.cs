@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
         {
             GameObject target = FindEnemyinRange();
             GameObject superTarget = FindPelletinRange();
-            childScript.Energy -= 5;
+            if(hitState != HitState.Invincible) childScript.Energy -= 5;
             if (target)
             {
                 goalposition = target.transform.position;
@@ -208,7 +208,25 @@ public class Player : MonoBehaviour
 
     void MegaChomp()
     {
-        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 0.5f))
+        RaycastHit hit;
+        GameObject pellet;
+        if (Physics.SphereCast(child.position, .4f, transform.TransformDirection(Vector3.forward), out hit, .7f))
+        {
+            if (hit.rigidbody.tag == "Pellet")
+            {
+                pellet = hit.transform.gameObject;
+
+                pellet.GetComponent<Renderer>().enabled = false;
+                pellet.GetComponent<Collider>().enabled = false;
+                childScript.Energy += 4;
+            }
+            if (hit.rigidbody.tag == "Bad Pellet")
+            {
+                pellet = hit.transform.gameObject;
+                Destroy(pellet);
+            }
+        }
+        if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 0.8f))
         {
             if (control.isGrounded)
             {
@@ -219,7 +237,11 @@ public class Player : MonoBehaviour
                 currentState = PlayerState.Jumping;
             }
         }
-        else transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
+        else
+        {
+            transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
+            //rb.MovePosition(goalposition);
+        }
     }
 
     void MegaChompTarget()
@@ -241,6 +263,7 @@ public class Player : MonoBehaviour
         {
             child.transform.LookAt(goalposition);
             transform.position = Vector3.Lerp(transform.position, goalposition, .2f);
+            //rb.MovePosition(goalposition);
         }
     }
 

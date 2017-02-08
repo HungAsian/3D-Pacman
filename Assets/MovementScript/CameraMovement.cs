@@ -14,15 +14,18 @@ public class CameraMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         // Cursor lock
-        Cursor.lockState = CursorLockMode.Locked;
-
-        float h = H * Input.GetAxis("Mouse X");
-        transform.Rotate(0, h, 0);
-
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Time.deltaTime != 0)
         {
-            //put something to close game here
-            Cursor.lockState = CursorLockMode.None;
+            Cursor.lockState = CursorLockMode.Locked;
+
+            float h = H * Input.GetAxis("Mouse X");
+            transform.Rotate(0, h, 0);
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                //put something to close game here
+                Cursor.lockState = CursorLockMode.None;
+            }
         }
 	}
 }

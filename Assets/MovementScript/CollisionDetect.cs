@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement; 
 public class CollisionDetect : MonoBehaviour {
     
     public Player player;
@@ -27,22 +27,31 @@ public class CollisionDetect : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        if (Health > 100) Health = 100;
-        if (Energy > 100) Energy = 100;
-
-        HealthSlider.value = Health;
-        EnergySlider.value = Energy;
-
-        if (Energy > 0 && player.hitState == Player.HitState.Vincible) ENDrain -= 1;
-        if (ENDrain == 0)
+    void Update()
+    {
+        if (Time.deltaTime != 0)
         {
-            Energy -= 1;
-            ENDrain = EnergyDrainTime;
-        }
-	}
+            if (Health > 100) Health = 100;
+            if (Energy > 100) Energy = 100;
 
-    void OnControllerColliderHit(ControllerColliderHit collider)
+            HealthSlider.value = Health;
+            EnergySlider.value = Energy;
+            if(Energy < 0) ENDrain -= 1;
+            if (ENDrain == 0)
+            {
+                Energy -= 1;
+                ENDrain = EnergyDrainTime;
+            }
+            if (Energy > 0 && player.hitState == Player.HitState.Vincible) ENDrain -= 1;
+            if (ENDrain == 0)
+            {
+                Energy -= 1;
+                ENDrain = EnergyDrainTime;
+            }
+        }
+    }
+
+    public void OnControllerColliderHit(ControllerColliderHit collider)
     {
         if (collider.gameObject.tag == "Enemy")
         {
@@ -84,6 +93,12 @@ public class CollisionDetect : MonoBehaviour {
                 player.hitState = Player.HitState.Invincible;
                 player.invincibilityTime = 50;
             }
+        }
+        if (collider.gameObject.tag == "FatEnemy")
+        {
+            Debug.Log("Game Should END here");
+            SceneManager.LoadScene("Vaughan Level Design Scene"); 
+            
         }
     }
 }
