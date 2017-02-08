@@ -14,15 +14,18 @@ public class SmallPelletRespawn : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		if (GetComponent<Renderer>().enabled == false) 
-		{
-			respawnTimer++;
-			if (respawnTimer == totalRespawnTime) {
-				GetComponent<Renderer>().enabled = true;
-				GetComponent<Collider>().enabled = true;
-				respawnTimer = 0;
-			}
-		}
-	}
+        if (Time.deltaTime != 0)
+        {
+            if (GetComponent<Renderer>().enabled == false)
+            {
+                respawnTimer++;
+                if (respawnTimer == totalRespawnTime)
+                {
+                    GetComponent<Renderer>().enabled = true;
+                    GetComponent<Collider>().enabled = true;
+                    respawnTimer = 0;
+                }
+            }
+        }
+    }
 }

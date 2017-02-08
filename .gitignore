@@ -79,3 +79,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.meta
+Assets/Scenes/EndMenu.unity.meta
+*.meta
+ProjectSettings/TagManager.asset
+Assets/Scenes/EndMenu.unity.meta

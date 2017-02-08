@@ -12,14 +12,17 @@ public class FatEnemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (character.speed < 3.0f)
+        if (Time.deltaTime != 0)
         {
-            transform.LookAt(character.transform.position);
-            transform.position = Vector3.Lerp(transform.position, character.transform.position, 0.01f);
+            if (stamina.Energy <= 0)
+            { 
+                transform.position = Vector3.Lerp(transform.position, new Vector3(character.transform.position.x, character.transform.position.y - 10, character.transform.position.z), 0.01f);
+                transform.LookAt(-(character.transform.position - transform.position));
+            }
+            else
+            {
+                transform.position = Vector3.Lerp(transform.position, new Vector3(150.0f, 100.0f, 70.0f), 0.05f);
+            }
         }
-        else
-        {
-            transform.position = new Vector3(150.0f, 100.0f, 70.0f); 
-        }
-	}
+    }
 }

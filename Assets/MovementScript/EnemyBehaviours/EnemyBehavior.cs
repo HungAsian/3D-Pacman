@@ -27,38 +27,41 @@ public class EnemyBehavior : MonoBehaviour {
 	// Update is called once per frame
     void Update()
     {
-        if (pellet != null)
+        if (Time.deltaTime != 0)
         {
-            target = player.transform.position;
-            if (Vector3.Distance(transform.position, target) < 5)
+            if (pellet != null)
+            {
+                target = player.transform.position;
+                if (Vector3.Distance(transform.position, target) < 5)
+                {
+                    currentState = EnemyState.chase;
+                }
+                else if (currentState != EnemyState.orbit)
+                {
+                    currentState = EnemyState.Return;
+                }
+            }
+            else
             {
                 currentState = EnemyState.chase;
             }
-            else if (currentState != EnemyState.orbit)
+            switch (currentState)
             {
-                currentState = EnemyState.Return;
+                case EnemyState.chase:
+                    chase();
+                    break;
+                case EnemyState.orbit:
+                    Orbit();
+                    break;
+                case EnemyState.Return:
+                    Return();
+                    break;
+                case EnemyState.flee:
+                    flee();
+                    break;
+
+
             }
-        }
-        else
-        {
-            currentState = EnemyState.chase;
-        }
-        switch (currentState)
-        {
-            case EnemyState.chase:
-                chase();
-                break;
-            case EnemyState.orbit:
-                Orbit();
-                break;
-            case EnemyState.Return:
-                Return();
-                break; 
-            case EnemyState.flee:
-                flee(); 
-                break;
-
-
         }
     }
     void chase()

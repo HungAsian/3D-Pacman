@@ -28,19 +28,22 @@ public class CollisionDetect : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Health > 100) Health = 100;
-        if (Energy > 100) Energy = 100;
-
-        HealthSlider.value = Health;
-        EnergySlider.value = Energy;
-
-        ENDrain -= 1;
-        if (ENDrain == 0)
+        if (Time.deltaTime != 0)
         {
-            Energy -= 1;
-            ENDrain = EnergyDrainTime;
+            if (Health > 100) Health = 100;
+            if (Energy > 100) Energy = 100;
+
+            HealthSlider.value = Health;
+            EnergySlider.value = Energy;
+
+            ENDrain -= 1;
+            if (ENDrain == 0)
+            {
+                Energy -= 1;
+                ENDrain = EnergyDrainTime;
+            }
         }
-	}
+    }
 
     void OnControllerColliderHit(ControllerColliderHit collider)
     {
