@@ -14,12 +14,13 @@ public class BoidController : MonoBehaviour {
     public Vector3 flockCenter;
     public Vector3 flockVelocity;
 
-    private GameObject[] boids;
+    //private GameObject[] boids;
+	private List<GameObject> boids = new List<GameObject>();
 
 	// Use this for initialization
 	void Start () {
         chasee = GameObject.FindGameObjectWithTag("Player");
-        boids = new GameObject[flockSize];
+        //boids = new GameObject[flockSize];
         for (var i=0; i<flockSize; i++)
         {
             Vector3 position = new Vector3 (Random.Range(0f, 100f), 20f, Random.Range(0f, 100f));
@@ -27,7 +28,8 @@ public class BoidController : MonoBehaviour {
             boid.transform.parent = transform;
             boid.transform.position = position;
             boid.GetComponent<BoidFlocking>().SetController (gameObject);
-            boids[i] = boid;
+            //boids[i] = boid;
+			boids.Add(boid);
 	    }
     }
 	
@@ -57,7 +59,9 @@ public class BoidController : MonoBehaviour {
         boid.transform.localPosition = position;
         boid.GetComponent<BoidFlocking>().SetController(gameObject);
 
-        boids[flockSize + 1] = boid;
+        //boids[flockSize + 1] = boid;
+		boids.Add(boid);
+		flockSize++;
     }
 
 }

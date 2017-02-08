@@ -8,7 +8,7 @@ public class PelletManagerScript : MonoBehaviour {
 
 	private bool respawnPellets = false;
 
-	BoidController boidObj;
+	public BoidController boidObj;
 
 
 
@@ -49,8 +49,15 @@ public class PelletManagerScript : MonoBehaviour {
 
                 }
 
+<<<<<<< HEAD
+				spawnState = pelletBoard.noPellets;
+				//boidObj.spawn();
+
+			}
+=======
                 if (respawnPellets == true)
                 {
+>>>>>>> origin/master
 
                     spawnState = pelletBoard.noPellets;
                 }
@@ -60,15 +67,23 @@ public class PelletManagerScript : MonoBehaviour {
             if (spawnState == pelletBoard.noPellets)
             {
 
+<<<<<<< HEAD
+				}
+				
+
+=======
                 //if (respawnPellets == true) {
                 foreach (var item in pelletArr)
                 {
                     item.GetComponent<Renderer>().enabled = true;
                     item.GetComponent<Collider>().enabled = true;
+>>>>>>> origin/master
 
                 }
 			spawnState = pelletBoard.activePellets;
 
+
+			boidObj.spawn();
 			boidObj.spawn();
 
 
