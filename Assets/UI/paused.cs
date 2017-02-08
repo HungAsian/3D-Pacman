@@ -9,7 +9,7 @@ public class paused : MonoBehaviour {
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (canvas.gameObject.activeInHierarchy == false)
             {
