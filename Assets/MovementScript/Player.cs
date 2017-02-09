@@ -246,6 +246,23 @@ public class Player : MonoBehaviour
 
     void MegaChompTarget()
     {
+        RaycastHit hit;
+        GameObject target;
+        if (Physics.SphereCast(child.position, .4f, transform.TransformDirection(Vector3.forward), out hit, .7f))
+        {
+            if (hit.rigidbody.tag == "Enemy")
+            {
+                target = hit.transform.gameObject;
+                Destroy(target);
+            }
+            if (hit.rigidbody.tag == "Super Pellet")
+            {
+                target = hit.transform.gameObject;
+                Destroy(target);
+                hitState = Player.HitState.Invincible;
+                invincibilityTime = 500;
+            }
+        }
         if (Vector3.Magnitude(transform.position - goalposition) < .5)
         {
             if (control.isGrounded)

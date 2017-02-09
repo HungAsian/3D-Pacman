@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AlwaysChaseEnemy : MonoBehaviour {
     public Transform player;
-    public GameObject enemy; 
     public float speed = 0.02f;
 	// Use this for initialization
 	void Start () {
@@ -16,7 +15,17 @@ public class AlwaysChaseEnemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = Vector3.Slerp(transform.position, player.position, speed); 
+        RaycastHit hit;
+        if (Physics.SphereCast(transform.position, .4f, transform.TransformDirection(Vector3.forward), out hit, 1f))
+        {
+            if (hit.transform.tag != "Player")
+            {
+                transform.position = Vector3.Lerp(transform.position, transform.parent.position, speed);
+            }
+            transform.position = Vector3.Lerp(transform.position, new Vector3(player.transform.position.x, .5f, player.transform.position.z), speed); 
+        }
+        else transform.position = Vector3.Lerp(transform.position, new Vector3(player.transform.position.x, .5f, player.transform.position.z), speed);
+        transform.rotation = Quaternion.identity;
 	}
 
 }   

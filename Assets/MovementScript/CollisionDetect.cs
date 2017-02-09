@@ -55,11 +55,18 @@ public class CollisionDetect : MonoBehaviour {
     {
         if (collider.gameObject.tag == "Enemy")
         {
-            //if (player.currentState == Player.PlayerState.MegaChomp || player.hitState == Player.HitState.Invincible) Destroy(collider.gameObject);
-            //else Health -= 10;
-            if (player.currentState == Player.PlayerState.MegaChompTarget)
+            if (player.currentState == Player.PlayerState.MegaChompTarget || player.hitState == Player.HitState.Invincible)
             {
                 Destroy(collider.gameObject);
+            }
+            else
+            {
+                Vector3 recoil =  Vector3.Normalize(collider.transform.position - transform.position);
+                recoil = -recoil * 4;
+                transform.position += recoil;
+                player.hitState = Player.HitState.Invincible;
+                player.invincibilityTime = 50;
+                Health -= 10;
             }
         }
         if (collider.gameObject.tag == "Pellet")

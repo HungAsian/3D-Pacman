@@ -12,8 +12,6 @@ public class FatEnemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        int currentStamina;
-        currentStamina = stamina.Energy;
         if (Time.deltaTime != 0)
         {
             if (stamina.Energy <= 0)

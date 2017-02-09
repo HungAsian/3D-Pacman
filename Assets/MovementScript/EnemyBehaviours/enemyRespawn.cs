@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemyRespawn : MonoBehaviour {
     public GameObject prefab;
     public int enemyCount=4;
-    public Transform enemy; 
+    public int cooldown = 100;
 
     float speed; 
 	// Use this for initialization
@@ -17,16 +17,20 @@ public class enemyRespawn : MonoBehaviour {
 	void Update () {
         if (Time.deltaTime != 0)
         {
-            if (transform.childCount < enemyCount)
+            if (cooldown > 0) cooldown--;
+            if (transform.childCount < enemyCount && cooldown == 0)
             {
                 Spawn();
+                cooldown = 100;
             }
         }
 	}
     void Spawn()
     {
-        GameObject enemy = Instantiate(prefab, transform.position, transform.rotation);
-        enemy.transform.parent = transform; 
+        GameObject enemy = Instantiate(prefab, transform.position, Quaternion.identity);
+        enemy.transform.parent = transform;
+        Renderer enemyRenderer = enemy.GetComponent<Renderer>();
+        enemyRenderer.material.color = Random.ColorHSV();
 
     }
 }
