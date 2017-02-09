@@ -19,7 +19,7 @@ Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man
 Loading C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  1.945 seconds
+- Completed reload, in  1.943 seconds
 Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
@@ -27,16 +27,16 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 1.598436 ms
+UnloadTime: 1.488508 ms
 Setting up 8 worker threads for Enlighten.
-  Thread -> id: 1238 -> priority: 1 
-  Thread -> id: 16fc -> priority: 1 
-  Thread -> id: 188c -> priority: 1 
-  Thread -> id: 1a8c -> priority: 1 
+  Thread -> id: 2ba4 -> priority: 1 
+  Thread -> id: 5e4 -> priority: 1 
+  Thread -> id: 1338 -> priority: 1 
+  Thread -> id: 28e8 -> priority: 1 
+  Thread -> id: 188 -> priority: 1 
+  Thread -> id: 1de4 -> priority: 1 
   Thread -> id: 1e84 -> priority: 1 
-  Thread -> id: ce4 -> priority: 1 
-  Thread -> id: 288c -> priority: 1 
-  Thread -> id: 2a98 -> priority: 1 
+  Thread -> id: 27c0 -> priority: 1 
 The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
  
 (Filename:  Line: 1754)
@@ -45,27 +45,11 @@ The referenced script on this Behaviour (Game Object 'Enemy Spawner') is missing
  
 (Filename:  Line: 1754)
 
-The referenced script on this Behaviour (Game Object 'Button (1)') is missing!
- 
-(Filename:  Line: 1754)
-
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.613210 ms
+UnloadTime: 7.508415 ms
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1253.
-Total: 1.032118 ms (FindLiveObjects: 0.075708 ms CreateObjectMapping: 0.044056 ms MarkObjects: 0.403779 ms  DeleteObjects: 0.507718 ms)
-
-The referenced script on this Behaviour (Game Object '<null>') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1329.
+Total: 1.087723 ms (FindLiveObjects: 0.080841 ms CreateObjectMapping: 0.045767 ms MarkObjects: 0.447835 ms  DeleteObjects: 0.512851 ms)
 
 The referenced script on this Behaviour (Game Object '<null>') is missing!
  
@@ -127,117 +111,4625 @@ The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
  
 (Filename:  Line: 1754)
 
-The referenced script on this Behaviour (Game Object '<null>') is missing!
+ded
  
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object '<null>') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object '<null>') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object '<null>') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object '<null>') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at Player.MegaChomp () [0x00000] in <filename unknown>:0 
-  at Player.Update () [0x00000] in <filename unknown>:0 
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 NullReferenceException: Object reference not set to an instance of an object
-  at Player.MegaChomp () [0x00000] in <filename unknown>:0 
-  at Player.Update () [0x00000] in <filename unknown>:0 
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 NullReferenceException: Object reference not set to an instance of an object
-  at Player.MegaChomp () [0x00000] in <filename unknown>:0 
-  at Player.Update () [0x00000] in <filename unknown>:0 
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 NullReferenceException: Object reference not set to an instance of an object
-  at Player.MegaChomp () [0x00000] in <filename unknown>:0 
-  at Player.Update () [0x00000] in <filename unknown>:0 
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 NullReferenceException: Object reference not set to an instance of an object
-  at Player.MegaChomp () [0x00000] in <filename unknown>:0 
-  at Player.Update () [0x00000] in <filename unknown>:0 
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-The referenced script on this Behaviour (Game Object '<null>') is missing!
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CollisionDetect.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+The referenced script on this Behaviour (Game Object 'Enemy Spawner') is missing!
  
 (Filename:  Line: 1754)
 
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.213669 ms
 
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1331.
+Total: 1.079169 ms (FindLiveObjects: 0.078275 ms CreateObjectMapping: 0.049616 ms MarkObjects: 0.465800 ms  DeleteObjects: 0.485048 ms)
 
-The referenced script on this Behaviour (Game Object '<null>') is missing!
+Game Quit
  
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
-
-The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
- 
-(Filename:  Line: 1754)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
