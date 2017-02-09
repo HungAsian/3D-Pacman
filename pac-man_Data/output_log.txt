@@ -19,7 +19,7 @@ Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man
 Loading C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.045 seconds
+- Completed reload, in  1.945 seconds
 Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
@@ -27,17 +27,217 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
 <RI> Initialized touch support.
-The referenced script on this Behaviour (Game Object 'QuitButton') is missing!
+UnloadTime: 1.598436 ms
+Setting up 8 worker threads for Enlighten.
+  Thread -> id: 1238 -> priority: 1 
+  Thread -> id: 16fc -> priority: 1 
+  Thread -> id: 188c -> priority: 1 
+  Thread -> id: 1a8c -> priority: 1 
+  Thread -> id: 1e84 -> priority: 1 
+  Thread -> id: ce4 -> priority: 1 
+  Thread -> id: 288c -> priority: 1 
+  Thread -> id: 2a98 -> priority: 1 
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
  
 (Filename:  Line: 1754)
 
-UnloadTime: 2.580082 ms
-Setting up 8 worker threads for Enlighten.
-  Thread -> id: 13b4 -> priority: 1 
-  Thread -> id: c0c -> priority: 1 
-  Thread -> id: 2a18 -> priority: 1 
-  Thread -> id: 1bf8 -> priority: 1 
-  Thread -> id: 1518 -> priority: 1 
-  Thread -> id: 229c -> priority: 1 
-  Thread -> id: 23ec -> priority: 1 
-  Thread -> id: bd4 -> priority: 1 
+The referenced script on this Behaviour (Game Object 'Enemy Spawner') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'Button (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.613210 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1253.
+Total: 1.032118 ms (FindLiveObjects: 0.075708 ms CreateObjectMapping: 0.044056 ms MarkObjects: 0.403779 ms  DeleteObjects: 0.507718 ms)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Player.MegaChomp () [0x00000] in <filename unknown>:0 
+  at Player.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Player.MegaChomp () [0x00000] in <filename unknown>:0 
+  at Player.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Player.MegaChomp () [0x00000] in <filename unknown>:0 
+  at Player.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Player.MegaChomp () [0x00000] in <filename unknown>:0 
+  at Player.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Player.MegaChomp () [0x00000] in <filename unknown>:0 
+  at Player.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'chaseEnemy') is missing!
+ 
+(Filename:  Line: 1754)
+
