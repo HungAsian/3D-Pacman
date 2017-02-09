@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
         {
             GameObject target = FindEnemyinRange();
             GameObject superTarget = FindPelletinRange();
-            childScript.Energy -= 5;
+            if(hitState != HitState.Invincible) childScript.Energy -= 5;
             if (target)
             {
                 goalposition = target.transform.position;
@@ -209,15 +209,21 @@ public class Player : MonoBehaviour
     void MegaChomp()
     {
         RaycastHit hit;
-        if (Physics.SphereCast(child.position, .3f, transform.TransformDirection(Vector3.forward), out hit, .7f))
+        GameObject pellet;
+        if (Physics.SphereCast(child.position, .4f, transform.TransformDirection(Vector3.forward), out hit, .7f))
         {
             if (hit.rigidbody.tag == "Pellet")
             {
-                GameObject pellet = hit.transform.gameObject;
+                pellet = hit.transform.gameObject;
 
                 pellet.GetComponent<Renderer>().enabled = false;
                 pellet.GetComponent<Collider>().enabled = false;
                 childScript.Energy += 4;
+            }
+            if (hit.rigidbody.tag == "Bad Pellet")
+            {
+                pellet = hit.transform.gameObject;
+                Destroy(pellet);
             }
         }
         if (Vector3.Magnitude(transform.position - goalposition) < .5 || Physics.Raycast(child.position, transform.TransformDirection(Vector3.forward), 0.8f))

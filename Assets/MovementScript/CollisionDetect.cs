@@ -36,7 +36,7 @@ public class CollisionDetect : MonoBehaviour {
 
             HealthSlider.value = Health;
             EnergySlider.value = Energy;
-            ENDrain -= 1;
+            if(Energy < 0) ENDrain -= 1;
             if (ENDrain == 0)
             {
                 Energy -= 1;
