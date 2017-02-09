@@ -16,7 +16,7 @@ public class AlwaysChaseEnemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         RaycastHit hit;
-        if (Physics.SphereCast(transform.position, .4f, transform.TransformDirection(Vector3.forward), out hit, 1f))
+        if (Physics.SphereCast(transform.position, .4f, transform.TransformDirection(Vector3.forward), out hit, 2f))
         {
             if (hit.transform.tag != "Player")
             {

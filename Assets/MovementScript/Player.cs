@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
         moveDirection *= speed;
 
         // Activate Mega Chomp
-        if (Input.GetMouseButtonDown(0) && currentState != PlayerState.MegaChomp && childScript.Energy > 5)
+        if (Input.GetMouseButtonDown(0) && currentState != PlayerState.MegaChomp && childScript.Energy > 5 && Time.deltaTime != 0)
         {
             GameObject target = FindEnemyinRange();
             GameObject superTarget = FindPelletinRange();

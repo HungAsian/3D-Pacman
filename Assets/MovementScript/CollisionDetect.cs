@@ -8,13 +8,12 @@ public class CollisionDetect : MonoBehaviour {
     public Player player;
     Slider HealthSlider;
     Slider EnergySlider;
-    
+    public GameObject gameOverCanvas;
     // Status Variables
     public int Health;
     public int Energy;
     public int EnergyDrainTime;
     public int ENDrain;
-	
     // Use this for initialization
 	void Start () {
         player = GetComponent<Player>();
@@ -49,6 +48,13 @@ public class CollisionDetect : MonoBehaviour {
                 ENDrain = EnergyDrainTime;
             }
         }
+        if (Health <= 0)
+        {
+            Debug.Log("ded");
+            gameOverCanvas.SetActive(true);
+            Time.timeScale = 0f;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     public void OnControllerColliderHit(ControllerColliderHit collider)
@@ -63,6 +69,7 @@ public class CollisionDetect : MonoBehaviour {
             {
                 Vector3 recoil =  Vector3.Normalize(collider.transform.position - transform.position);
                 recoil = -recoil * 4;
+                if (recoil.y < 0) recoil.y = transform.position.y;
                 transform.position += recoil;
                 player.hitState = Player.HitState.Invincible;
                 player.invincibilityTime = 50;
@@ -103,9 +110,7 @@ public class CollisionDetect : MonoBehaviour {
         }
         if (collider.gameObject.tag == "FatEnemy")
         {
-            Debug.Log("Game Should END here");
-            SceneManager.LoadScene("Vaughan Level Design Scene"); 
-            
+            Health = 0; 
         }
     }
 }
