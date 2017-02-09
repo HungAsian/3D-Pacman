@@ -1,0 +1,43 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro 2000 (ID=0xdd8)
+    Vendor:   NVIDIA
+    VRAM:     979 MB
+    Driver:   10.18.13.6213
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.045 seconds
+Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\vcv5733\Documents\GitHub\3D-Pacman\3D-Pacman\pac-man_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
+<RI> Initialized touch support.
+The referenced script on this Behaviour (Game Object 'QuitButton') is missing!
+ 
+(Filename:  Line: 1754)
+
+UnloadTime: 2.580082 ms
+Setting up 8 worker threads for Enlighten.
+  Thread -> id: 13b4 -> priority: 1 
+  Thread -> id: c0c -> priority: 1 
+  Thread -> id: 2a18 -> priority: 1 
+  Thread -> id: 1bf8 -> priority: 1 
+  Thread -> id: 1518 -> priority: 1 
+  Thread -> id: 229c -> priority: 1 
+  Thread -> id: 23ec -> priority: 1 
+  Thread -> id: bd4 -> priority: 1 
